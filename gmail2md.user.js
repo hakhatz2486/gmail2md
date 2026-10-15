@@ -1,16 +1,24 @@
 // ==UserScript==
-// @name         gmail2md
-// @namespace    https://github.com/hakhatz2486/gmail2md
-// @version      0.1.0
-// @description  Gmailで開いているスレッドをMarkdownに変換してクリップボードにコピーする
-// @match        https://mail.google.com/mail/*
+// @name           gmail2md
+// @name:ja        gmail2md
+// @namespace      https://github.com/hakhatz2486/gmail2md
+// @version        0.1.0
+// @description    Converts the Gmail thread you are viewing into Markdown and copies it to the clipboard.
+// @description:ja Gmailで開いているスレッドをMarkdownに変換し、クリップボードにコピーします。
+// @author         hakhatz2486
+// @homepageURL    https://github.com/hakhatz2486/gmail2md
+// @supportURL     https://github.com/hakhatz2486/gmail2md/issues
+// @downloadURL    https://raw.githubusercontent.com/hakhatz2486/gmail2md/main/gmail2md.user.js
+// @updateURL      https://raw.githubusercontent.com/hakhatz2486/gmail2md/main/gmail2md.user.js
+// @license        MIT
+// @match          https://mail.google.com/mail/*
+// @icon           https://www.google.com/s2/favicons?sz=64&domain=mail.google.com
+// @require        https://cdn.jsdelivr.net/npm/turndown@7.2.0/dist/turndown.js
+// @require        https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.js
+// @grant          GM_setClipboard
+// @grant          GM_registerMenuCommand
+// @run-at         document-end
 // @noframes
-// @grant        GM_setClipboard
-// @grant        GM_registerMenuCommand
-// @require      https://cdn.jsdelivr.net/npm/turndown@7.2.0/dist/turndown.js
-// @require      https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.js
-// @updateURL    https://raw.githubusercontent.com/hakhatz2486/gmail2md/main/gmail2md.user.js
-// @downloadURL  https://raw.githubusercontent.com/hakhatz2486/gmail2md/main/gmail2md.user.js
 // ==/UserScript==
 
 // Gmailのスレッド画面のDOMを読み取り、メタ情報と本文をMarkdownにしてクリップボードへコピーする。
