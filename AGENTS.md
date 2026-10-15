@@ -4,7 +4,7 @@ This file provides guidance to AI agents when working with code in this reposito
 
 ## What this is
 
-A single-file Violentmonkey userscript (`gmail2md.user.js`) that converts the Gmail thread currently open into Markdown and copies it to the clipboard, so that mail from Gmail accounts that cannot be connected via MCP can be pasted into an LLM. It reads Gmail's rendered DOM rather than calling any API. HTML-to-Markdown conversion is done by Turndown and turndown-plugin-gfm, loaded via `@require` from jsDelivr. There is no build system, package manager, linter, or test suite; the entire project is the one `.user.js` file.
+A single-file Violentmonkey userscript (`gmail2md.user.js`) that converts the Gmail thread currently open into Markdown and copies it to the clipboard, so that mail from Gmail accounts that cannot be connected via MCP can be pasted into an LLM. It reads Gmail's rendered DOM rather than calling any API. HTML-to-Markdown conversion is done by Turndown and turndown-plugin-gfm, loaded via `@require` from jsDelivr. There is no build system, package manager, linter, or test suite; the code is the one `.user.js` file. User-facing documentation lives in `README.md`/`README-ja.md` and `CHANGELOG.md`/`CHANGELOG-ja.md`. The Japanese files (`-ja`) are the source of truth, and the unsuffixed English files are translations of them: edit the Japanese file first, then update the English file to match it. Add a changelog entry whenever `@version` is bumped.
 
 ## Development workflow
 
