@@ -2,14 +2,14 @@
 // @name           gmail2md
 // @name:ja        gmail2md
 // @namespace      https://github.com/hakhatz2486/gmail2md
-// @version        0.1.0
+// @version        0.1.1
 // @description    Converts the Gmail thread you are viewing into Markdown and copies it to the clipboard.
 // @description:ja Gmailで開いているスレッドをMarkdownに変換し、クリップボードにコピーします。
 // @author         hakhatz2486
-// @homepageURL    https://github.com/hakhatz2486/gmail2md
+// @homepageURL    https://greasyfork.org/ja/scripts/600442-gmail2md
 // @supportURL     https://github.com/hakhatz2486/gmail2md/issues
-// @downloadURL    https://raw.githubusercontent.com/hakhatz2486/gmail2md/main/gmail2md.user.js
-// @updateURL      https://raw.githubusercontent.com/hakhatz2486/gmail2md/main/gmail2md.user.js
+// @downloadURL    https://update.greasyfork.org/scripts/600442/gmail2md.user.js
+// @updateURL      https://update.greasyfork.org/scripts/600442/gmail2md.meta.js
 // @license        MIT
 // @match          https://mail.google.com/mail/*
 // @icon           https://www.google.com/s2/favicons?sz=64&domain=mail.google.com

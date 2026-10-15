@@ -18,7 +18,7 @@ Gmail enforces Trusted Types (`require-trusted-types-for 'script'`). Never build
 
 Gmail's obfuscated class names change over time. When a selector breaks, re-inspect the live DOM and prefer attributes (`email`, `name`, `title`, `jsname`, `role`, `data-message-id`, `download_url`) over classes. Only the body container (`.a3s`), the "Show details" button (`.ajy`), and the trimmed-content toggle (`.ajR`) rely on class names, because no stable attribute was found for them.
 
-Releases are distributed through the raw GitHub URL in `@downloadURL`/`@updateURL`. Bump `@version` for every user-facing change, otherwise installed copies are not updated. If the script is published to Greasy Fork, switch `@homepageURL`, `@downloadURL`, and `@updateURL` to the Greasy Fork URLs, following the other userscripts by the same author (`hakhatz2486/x-one-click-button`, `hakhatz2486/claude-logo-replacer`).
+Releases are distributed through Greasy Fork (script ID 600442, currently unlisted). `@homepageURL`, `@downloadURL`, and `@updateURL` point to Greasy Fork, following the other userscripts by the same author (`hakhatz2486/x-one-click-button`, `hakhatz2486/claude-logo-replacer`); `@supportURL` stays on GitHub Issues. Bump `@version` for every user-facing change, otherwise installed copies are not updated.
 
 ## Architecture
 
